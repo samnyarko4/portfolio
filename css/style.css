@@ -1,0 +1,451 @@
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my code*/
+
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.container{
+    max-width: 1440px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/*---------------------------------------------------------------------------
+                                Desktop 
+---------------------------------------------------------------------------- */
+
+/* Desktop Header ----------------- */
+.header{
+    padding-top: 1.5rem;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    height: 5rem;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.main-nav{
+    
+    float: right;
+}
+
+.main-nav ul{
+    padding-top: 1rem;
+}
+
+.main-nav ul li{
+    display: inline;
+    margin: 10px;
+}
+
+.nav-link{
+    color: black;
+}
+
+.current{
+    text-decoration: underline;
+}
+
+
+.logo img{
+    margin-top: -3rem;
+    height: 8.5rem;
+    width: 12rem;
+    
+}
+
+.open-nav{
+    display: none;
+}
+
+.close-nav{
+    display: none;
+}
+
+/* ------------------------------------------
+                Desktop Home
+------------------------------------------- */
+/* Desktop Section 1 */
+.welcome-img{
+    background-color: black;
+    width: 500px;
+    height: 520px ;
+}
+.welcome-img img{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width:450px;
+    height: 500px;
+}
+.section-1{
+    margin: 10rem 10px 10px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10rem;
+}
+
+.section-1 h1{
+    margin: -30rem 0 0 40rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 88px;
+    font-weight: bold;
+}
+
+.section-1 p{
+    margin: 0 0 0 40rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 3.5rem;
+    width: 35rem;
+}
+
+/* Desktop Section 2 */
+.section-2{
+    min-width: 100%;
+    margin-top: 7rem;
+    margin-bottom: 25rem;
+}
+
+ .clients{
+        max-width: 650px;
+        background-color: black;
+        float: right;
+    }
+
+.section-2 img{
+    width: 300px;
+
+}
+
+.section-2 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 7rem;
+}
+
+.section-2 ol{
+    margin: 3rem 0 0 -5rem;
+    text-align: center;
+}
+
+.section-2 ol li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 4rem;
+}
+/* ---------------------------------------------
+               Desktop About 
+----------------------------------------------*/
+
+
+
+
+
+/* --------------------------------------------
+                Desktop Contact 
+---------------------------------------------*/
+.contact-form{
+    margin: 5rem 0 0 0;
+    padding-top: 7rem;
+    background-color: black;
+}
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+  }
+  
+  h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  input[type='text'], [type='email'], select, textarea, ::placeholder{
+	background: none;
+  border: none;
+	border-bottom: solid 2px white;
+	color: white;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+  }
+  
+  .underline {
+    border-bottom: solid 2px #474544;
+    margin: 2rem auto;
+    width: 80px;
+  }
+
+  #subject_input option{
+      color: black;
+  }
+
+  #form-button{
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+      padding: 1rem;
+
+  }
+
+  #form-button:hover{
+      background-color: white;
+      color: black;
+  }
+
+
+footer{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    background-color: black;
+}
+
+.icon{
+    color: white;
+    font-size: 55px;
+}
+
+.socials{
+    float: right;
+}
+
+.footer-menu{
+    padding-top: 1rem;
+}
+
+.nav-footer-link{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 23px;
+    line-height: 3rem;
+}
+
+.footer-menu ul{
+    margin-bottom: -3rem;
+}
+
+/*HEADER SECTION For Tablet and Mobile--------------------*/
+@media screen and (max-width: 768px){
+    body{
+        margin: 3rem 0 0 0;
+    }
+
+    main{
+        margin-top: 5rem;
+    }
+.header{
+    width: 100%;
+    z-index: 9999;
+    background:transparent;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    transition: all 3sec;
+}
+
+.nav{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo and menu button */
+
+.logo{
+    padding-top: 0%;
+}
+
+.logo img{
+    height: 8.5rem;
+    width: 12rem;
+}
+
+.logo,
+.open-nav{
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* logo and menu botton hover state */
+.logo:hover,
+.open-nav:hover,
+.close-nav:hover{
+    color: firebrick;
+}
+
+.main-nav ul{
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.open-nav{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-item{
+    margin: 1.5rem;  
+}
+
+/* Menu page links */
+.nav-link{
+    font-size: 1.6rem;
+    letter-spacing: 0.30rem;
+    color: white;
+    font-weight: 500;  
+    transition: .3s;
+}
+/* Menu page link hover state */
+.nav-link:hover{
+    color: firebrick;
+    font-weight: 500;
+}
+
+
+/* close menu button */
+.close-nav{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0.8rem;
+    right: 1.115rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+    .main-nav{
+        position: fixed;
+        top: -250%;
+        left: 0;
+        width: 100%;
+        padding: 0rem 0 0.5rem;
+        text-align: center;
+        background: black;
+        transition: .4s;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 99999;
+    }
+    .show-menu{
+        top: 0%;
+    }
+
+    /*--------------------------------------------- 
+                     Tablet Main
+    ------------------------------------------- */
+    /* Tablet Section 1 --------------- */
+    .section-1{
+        padding-top: 30rem;
+    }
+
+    .icon{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .main-nav ul li a{
+        font-size: 15px;
+    }
+
+    .nav-footer-link{
+        font-size: 12px;
+        line-height: 0rem;
+    }
+
+    .footer-menu{
+        padding-top: 0.5rem;
+    }
+
+    .icon{
+        font-size: 15px;
+    }
+}
