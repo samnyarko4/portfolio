@@ -14,42 +14,42 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav container">
-            <a href="index.html" class="logo"><img src="/images/logo-black.png" alt=""></a>
+        <nav class="nav container" role="navigation">
+            <a href="index.html" class="logo" id="black-logo"><img src="/images/logo-black.png" alt="Logo"></a>
+            <label id="dark-change"></label>
             <div class="main-nav" id="navigation">
                 <ul class="nav-links">
-                        
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
                         <li class="nav-item"><a href="contact.html" class="nav-link current">Contact</a></li>
+                      </ul>
                     <div class="close-nav" id="nav-close"><i class='bx bx-x'></i></div>
-                </ul>
             </div>
             <div class="open-nav" id="open-nav"><i class='bx bx-menu'></i></div>
         </nav>
     </header>
 
     <main>
-        <div class="contact-form container">
+        <div class="contact-form container" role="form">
             <h3>&bull; Contact Me &bull;</h3>
             <div class="underline">
             </div>
             <form action="#" method="post" id="contact_form">
               <div class="name">
-                <label for="name"></label>
+                <label for="name_input"></label>
                 <input type="text" placeholder="My name is" name="name" id="name_input" required>
               </div>
               <div class="email">
-                <label for="email"></label>
+                <label for="email_input"></label>
                 <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
               </div>
               <div class="telephone">
-                <label for="name"></label>
+                <label for="telephone_input"></label>
                 <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
               </div>
               <div class="subject">
-                <label for="subject"></label>
-                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                <label for="subject_input"></label>
+                <select name="subject" id="subject_input" required>
                   <option disabled hidden selected>Subject</option>
                   <option>I would like to start a project</option>
                   <option>I'd like to ask a question</option>
@@ -57,7 +57,7 @@
                 </select>
               </div>
               <div class="message">
-                <label for="message"></label>
+                <label for="message_input"></label>
                 <textarea name="message" placeholder="I'm contacting you about" id="message_input" cols="30" rows="5" required></textarea>
               </div>
               <div class="submit">
@@ -71,12 +71,11 @@
             <ul>
                 <li class="nav-item"><a href="index.html" class="nav-footer-link">Home</a></li>
                         <li class="nav-item"><a href="gallery.html" class="nav-footer-link">Gallery</a></li>
-                        <li class="nav-item"><a href="#About" class="nav-footer-link">About</a></li>
                         <li class="nav-item"><a href="#Contact" class="nav-footer-link">Contact</a></li>
             </ul>
 
             <div class="socials">
-                <a href="www.instagram.com/solo4k" class="icon"><i class='bx bxl-instagram'></i></box-icon></a>
+                <a href="www.instagram.com/solo4k" class="icon"><i class='bx bxl-instagram'></i></a>
                 <a href="www.twitter.com/" class="icon"><i class='bx bxl-twitter' ></i></a>
                 <a href="www.facebook.com/" class="icon"><i class='bx bxl-facebook'></i></a>
             </div>

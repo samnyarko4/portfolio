@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Samuel Nyarko Gallery</title>
 
      <!--Link to css-->
      <link rel="stylesheet" href="css/style.css">
@@ -14,20 +14,68 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav container">
-            <a href="index.html" class="logo">sam test put logo</a>
+        <nav class="nav container" role="navigation">
+            <a href="index.html" class="logo" id="black-logo"><img src="/images/logo-black.png" alt=""></a>
+            <label id="dark-change"></label>
             <div class="main-nav" id="navigation">
-                <ul class="nav-links">
-                        
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <ul class="nav-links">         
+                        <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
                         <li class="nav-item"><a href="gallery.html" class="nav-link current">Gallery</a></li>
-                        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
                     <div class="close-nav" id="nav-close"><i class='bx bx-x'></i></div>
-                </ul>
             </div>
             <div class="open-nav" id="open-nav"><i class='bx bx-menu'></i></div>
         </nav>
     </header>
+
+    <main class="container photo-grid">
+        <h4>Photos Taken By Me</h4>
+        <div class="row">
+            <div class="column">
+              <img src="images/IMG_0604.png" alt="All For God Clothing Photo">
+              <img src="images/IMG_3506.JPG" alt="All For God Clothing Photo">
+            </div>
+
+            <div class="column">
+            <img src="images/IMG_0230.png" alt="All For God Clothing Photo">
+            <img src="images/IMG_0266.png" alt="All For God Clothing Photo">
+            </div>
+
+            <div class="column">
+                <img src="images/ge1.png" alt="Ginuwine Brand Photo">
+                <img src="images/IMG_5125.png" alt="All For God Clothing Photo">
+            </div>
+        </div>
+        <h4>Logos Created By Me</h4>
+        <div class="row">
+            <div class="column">
+                <img src="images/Luxuryice-logo.png" alt="Luxury Ice Logo">
+                <img src="images/Snphotogrophy-logo.png" alt="Sam Nyarko Photography Logo">
+            </div>
+
+            <div class="column">
+                <img src="images/Made-up-Logo-1.png" alt="Created Logo 1">
+                <img src="images/Made-up-Logo2.jpg" alt="Created Logo 2">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-menu container">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-footer-link">Home</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-footer-link">Gallery</a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-footer-link">Contact</a></li>
+            </ul>
+
+            <div class="socials" id="social-icons">
+                <a href="www.instagram.com/solo4k" class="icon"><i class='bx bxl-instagram'></i></a>
+                <a href="www.twitter.com/" class="icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="www.facebook.com/" class="icon"><i class='bx bxl-facebook'></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="/java/main.js"></script>
 </body>
 </html>
